@@ -18,12 +18,11 @@ This project is an implementation of the traditional Rock Paper Scissor game usi
 + Python 3.8
 
 ## Instructions to Play 
-+ Use terminal to run the python program 
-+ python main.py
++ Use terminal to run the python program ```python main.py```
 
 ## Instruction to run unit tests
-+ Install pytest
-+ Run command from the project directory -> py.test
++ Install requirements ```pip install requirements.txt```
++ Run command from the project directory ```py.test```
  
 ### Additional features successfully implemented:
 + Validation of user's input without crashing the game.
