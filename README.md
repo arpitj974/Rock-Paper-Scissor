@@ -21,7 +21,7 @@ This project is an implementation of the traditional Rock Paper Scissor game usi
 + Use terminal to run the python program ```python main.py```
 
 ## Instruction to run unit tests
-+ Install requirements ```pip install requirements.txt```
++ Install requirements ```pip install -r requirements_dev.txt```
 + Run command from the project directory ```py.test```
  
 ### Additional features successfully implemented:
