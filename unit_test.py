@@ -6,25 +6,25 @@ game = Game()
 game.initialize()
 
 
-def test_main_validate_action_whitespace():
+def test_0_main_validate_action_whitespace():
     x = "    "
     y = False
-    assert p1.validate_action(x) == y, "test failed"
+    assert p1.validate_action(x) == y, "test failed "
 
 
-def test_main_validate_action_digit_plus_character():
+def test_1_main_validate_action_digit_plus_character():
     x = "45st"
     y = False
     assert p1.validate_action(x) == y, "test failed"
 
 
-def test_main_validate_action_digit():
+def test_2_main_validate_action_digit():
     x = "3"
     y = True
     assert p1.validate_action(x) == y, "test failed"
 
 
-def test_main_get_result():
+def test_3_main_get_result():
     player_action = 1
     computer_action = 2
 

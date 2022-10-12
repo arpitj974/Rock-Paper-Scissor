@@ -3,15 +3,18 @@ from constants import Action
 
 
 class Player:
-    wins = 0
-    actions = []
-    last_action = None
+    """
+    This class has all the methods and attributes needed to represent a player
+    """
+    __wins = 0
+    __actions = []              # Records all the actions chosen by the player in this session
+    __last_action = None        # Records the last action chosen by the player
 
     def get_wins(self):
-        return self.wins
+        return self.__wins
 
     def get_last_action(self):
-        return self.last_action
+        return self.__last_action
 
     def validate_action(self, action):
         """
@@ -49,8 +52,8 @@ class Player:
                 logger.error("Input validation failed, exception {} ".format(e))
 
             if valid_action:
-                self.actions.append(int(player_action.strip()))
-                self.last_action = int(player_action.strip())
+                self.__actions.append(int(player_action.strip()))
+                self.__last_action = int(player_action.strip())
                 break
             else:
                 print("\nPlease provide a valid input number for the action: ", end="")
@@ -58,4 +61,4 @@ class Player:
         return int(player_action)
 
     def win(self):
-        self.wins += 1
+        self.__wins += 1
