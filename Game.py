@@ -53,9 +53,9 @@ class Game:
         """
 
         result = False
+        print("\nDo you want to play again ? (y/n) ", end="")
 
         while True:
-            print("\nDo you want to play again ? (y/n) ", end="")
 
             cont_playing = input()
             cont_playing = cont_playing.strip()
@@ -67,7 +67,7 @@ class Game:
                 result = False
                 break
             else:
-                print("\nPlease provide a valid input (either y or n) :", end="")
+                print("\nPlease provide a valid input (either y or n) : ",end="")
                 continue
 
         return result
